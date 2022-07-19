@@ -1,4 +1,4 @@
-//Depedency variables
+ //Depedency variables
 const express = require('express')
 var cors = require('cors');
 var querystring = require('querystring');
