@@ -30,6 +30,8 @@ const scopes = [
     'user-follow-modify'
   ];
 
+const port = process.env.PORT || '5000';
+
 //Initialising the SpotifyAPI node package
 var spotifyApi = new SpotifyWebApi({
     clientId: 'e5528e5bb8b24755ad89dbc0eae5bea8',
@@ -214,7 +216,6 @@ app.post('/makeActive',(req, res)=>{
   res.send({activeUser:[user1Active,user2Active,user3Active,user4Active]})
 })
 
-const port = process.env.PORT || '5000';
 app.listen(port, () =>
    console.log(
      'HTTP Server up. Now go to http://localhost:${port} in your browser.'
