@@ -214,9 +214,10 @@ app.post('/makeActive',(req, res)=>{
   res.send({activeUser:[user1Active,user2Active,user3Active,user4Active]})
 })
 
-app.listen(8888, () =>
+const port = process.env.PORT || '5000';
+app.listen(port, () =>
    console.log(
-     'HTTP Server up. Now go to http://localhost:8888/ in your browser.'
+     'HTTP Server up. Now go to http://localhost:${port} in your browser.'
    )
  );
 
