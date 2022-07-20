@@ -39,7 +39,6 @@ var spotifyApi = new SpotifyWebApi({
     redirectUri: 'https://spotifyapi-qp.herokuapp.com/callback'
     // redirectUri: 'https://www.google.com'
 });
-
 var access_token;
 
 //Initialising the express server
